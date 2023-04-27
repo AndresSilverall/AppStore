@@ -25,5 +25,6 @@ def api_movie(request, item: str) -> str:
 
 
 def index(request):
-     context = {"date": datetime.datetime.now()}
+     frameworks = ["Laravel", ".Net", "Django", "Express", "ASP.NET" ]
+     context = {"date": datetime.datetime.now(), "frameworks": frameworks}
      return render(request, "index.html", context=context)

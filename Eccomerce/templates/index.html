@@ -9,6 +9,17 @@
 <body>
     <h3> <center> welcome to my APIstore!</center></h3>
     <h3> date: {{date}}</h3>
+    <h3> frameworks: {{frameworks}}</h3>
+    {% for framework in frameworks %}
+    <ul>
+        <li> {{framework}}</li>
+    </ul>
+    {% endfor %}
+    {% if "Laravele" in frameworks %}
+    <h3> Item valido!</h3>
+    {% else %}
+    <h3> item invalido!</h3>
+    {% endif %}
     <footer> <small> Derechos reservados!</small></footer>
 </body>
 </html>
