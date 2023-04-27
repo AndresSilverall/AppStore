@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-*t$+&*q*)-h$qw+45$8e5kc$j_$*tp%(eij(qp6ulu1@ac3ex5
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+CSRF_ENABLED = False
 
 # Application definition
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'appmovie',
 ]
 
 MIDDLEWARE = [
@@ -103,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-us'
 
 TIME_ZONE = 'UTC'
 
