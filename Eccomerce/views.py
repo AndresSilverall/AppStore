@@ -28,3 +28,11 @@ def index(request):
      frameworks = ["Laravel", ".Net", "Django", "Express", "ASP.NET" ]
      context = {"date": datetime.datetime.now(), "frameworks": frameworks}
      return render(request, "index.html", context=context)
+
+
+def father(request):
+    return render(request, "father.html")
+
+
+def carlos(request):
+     return render(request, "carlos.html")

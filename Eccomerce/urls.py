@@ -22,4 +22,6 @@ urlpatterns = [
     path('main/', views.main, name="main"),
     path('api/<str:item>', views.api_movie, name="api"),
     path('index/', views.index, name="index"),
+    path('father/', views.father, name="father"),
+    path('carlos/', views.carlos, name="carlos"),
 ]
