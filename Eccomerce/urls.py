@@ -20,4 +20,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('main/', views.main, name="main"),
+    path('api/<str:item>', views.api_movie, name="api"),
 ]
