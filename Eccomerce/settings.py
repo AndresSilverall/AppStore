@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Eccomerce.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["Eccomerce/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

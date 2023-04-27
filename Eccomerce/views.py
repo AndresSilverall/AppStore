@@ -1,4 +1,6 @@
 from django.http import HttpResponse, JsonResponse
+from django.shortcuts import redirect, render
+import datetime
 
 
 def main(request):
@@ -20,3 +22,8 @@ def api_movie(request, item: str) -> str:
             message = "Error 404"
         
     return HttpResponse(message)
+
+
+def index(request):
+     context = {"date": datetime.datetime.now()}
+     return render(request, "index.html", context=context)
